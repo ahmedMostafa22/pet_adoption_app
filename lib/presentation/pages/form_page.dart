@@ -61,7 +61,10 @@ class _FormPageState extends State<FormPage> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const PetsPage()));
+                                  builder: (context) => PetsPage(
+                                      username: nameC.text,
+                                      email: emailC.text,
+                                      password: passwordC.text)));
                         }
                       },
                       child: const Text('Sign Up')))
